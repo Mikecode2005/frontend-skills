@@ -1,0 +1,28 @@
+{
+  "name": "frontend-skills",
+  "main": "./workers/app.ts",
+  "compatibility_date": "2026-06-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": "./public/",
+    "binding": "ASSETS"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "AGENTS",
+        "class_name": "AgentStore"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "AgentStore"
+      ]
+    }
+  ]
+}
