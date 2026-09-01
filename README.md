@@ -2,7 +2,7 @@
 
 Frontend Skills is an agent-ready skill registry for developers who want focused frontend behavior instead of giant, generic prompts.
 
-Create an agent stack, inspect a skill's instruction and review checklist, then add it to the right agent. Skills cover accessibility, UI architecture, performance, testing, and interaction design.
+Create an agent stack, inspect a skill's instruction and review checklist, then add it to the right agent. The web catalog currently includes 30 curated skills across accessibility, UI architecture, performance, testing, and interaction design.
 
 ## Current experience
 
@@ -20,7 +20,7 @@ Create an agent stack, inspect a skill's instruction and review checklist, then 
 - **Agent** — a named frontend worker with a purpose.
 - **Agent stack** — the ordered set of skills assigned to an agent.
 
-The current catalog is source-controlled product content. Agent assignments are workspace state persisted by the `AgentStore` Durable Object. An extended library of 149 focused review packs lives in [`docs/skill-packs`](docs/skill-packs/README.md), ready for future catalog ingestion and versioning.
+The current catalog of 30 curated skills is source-controlled product content. Agent assignments are workspace state persisted by the `AgentStore` Durable Object. An extended library of 149 focused review packs lives in [`docs/skill-packs`](docs/skill-packs/README.md), ready for future catalog ingestion and versioning.
 
 ## Local development
 
