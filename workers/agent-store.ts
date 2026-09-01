@@ -40,6 +40,11 @@ export class AgentStore extends DurableObject<AgentStoreEnv> {
     return { ...agent, skillIds: [] };
   }
 
+  delete(agentId: number): void {
+    this.ctx.storage.sql.exec("DELETE FROM agent_skills WHERE agent_id = ?", agentId);
+    this.ctx.storage.sql.exec("DELETE FROM agents WHERE id = ?", agentId);
+  }
+
   install(agentId: number, skillId: string): void {
     this.ctx.storage.sql.exec("INSERT OR IGNORE INTO agent_skills (agent_id, skill_id) VALUES (?, ?)", agentId, skillId);
   }
